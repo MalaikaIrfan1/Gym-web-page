@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up for membership at The Xeros Fitness and choose the services you need.">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <Header>
+        <div class="logo">
+            <p class="head">The Xeros Fitness</p>
+            <ul>
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/memebership">Membership</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </div>
+    </Header>
+    
+    <main>
+        <div class="forms"> <br><br>
+            <h1>Membership Form</h1>
+            <form>
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <!-- Name -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name here..." required><br><br>
+                    
+                    <!-- Phone number -->
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" placeholder="Your cellphone number here..." required><br><br>
+                    
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email here..." value="@gmail.com" readonly><br><br>
+                </fieldset>
+                
+                <!-- Gender Selection -->
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="M">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="F"><br><br>
+                </fieldset>
+
+                <!-- Services Section -->
+                <fieldset>
+                    <legend>Services Included</legend>
+                    <label>Choose the service you want to use:</label><br>
+                    <input type="checkbox" id="strength" value="Strength workout">
+                    <label for="strength">Strength workout</label><br>
+                    <input type="checkbox" id="yoga" value="Yoga classes">
+                    <label for="yoga">Yoga classes</label><br>
+                    <input type="checkbox" id="cardio" value="Cardio">
+                    <label for="cardio">Cardio</label><br><br>
+                </fieldset>
+
+                <!-- Address Section -->
+                <label for="address">Your Address</label><br>
+                <textarea id="address" name="address" rows="3" placeholder="Your Address here..."></textarea><br><br>
+                
+                <!-- Action Buttons -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset" onclick="resetForm()">
+                <input type="button" value="Next" onclick="window.location.href='nextPage.html';"><br><br>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 The Xeros Fitness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optionally, add JavaScript for reset button or form validation
+        function resetForm() {
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>

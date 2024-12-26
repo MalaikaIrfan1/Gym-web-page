@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+Header{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed ;
+    background-image: linear-gradient(#FFFF00,#5a5a61	);
+}
+Header .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: rgb(150, 13, 13);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+Header ul{
+    float: right;
+}
+Header li{
+    display: inline-block;
+    list-style: none;
+}
+Header li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+Header li a:hover{
+    color: rgb(42, 25, 103);
+    transition: all 0.4s ease 0s;
+}
+.content img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    position: static;
+    bottom: 0;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 30px;
+    color: aliceblue;
+    background-color: #101c2e;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+}
+.button {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #101c2e;
+  }
+.button:active {
+    background-color: #ffbf00;
+}
+main p text{
+    color: black;
+    text-align: center;
+    text-size-adjust: initial;
+}
+
+.forms {
+    background-color : rgb(36, 36, 87);
+    color : aliceblue;
+}
+
+h1.heading {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    unicode-bidi: isolate;
+}
+
+section h3 {
+    color: #1a488b;
+}
